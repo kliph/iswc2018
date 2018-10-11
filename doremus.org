@@ -1,0 +1,45 @@
+* A knowledge graph for classical music
+* DOing REusable MUSic data
+* Music archives have detailed knowledge
+- Stored in a variety of formats
+- Archives can't talk to each other
+* Applied semantic web approach to solve problem
+* DOREMUS modeling
+- Extension of FRBRoo
+- Choffe, 2017
+* Controlled vocabularies for music metadata
+- published at ISMIR 2018
+- [[data.doremus.org/vocabularies][data.doremus.org/vocabularies]]
+* Dealing with different formats
+- e.g. MARC file
+- =marc2rdf=
+- Free Text Interpreter
+  - Labels arbitrary text with annotations from  controlled vocabulary.
+  - Insight: would be nice to use when parsing EEG metadata
+* Challenges
+- Missing properties
+- Similar property values do not necessarily imply a match
+- Mismatches due to institutional encoding choices
+* Legato
+- A new data linking system
+- Finds accordances among multiple databases
+* Interlinking with MusicBrainz
+* [[https://chatbot.doremus.org]]
+* [[github.com/DOREMUS-ANR/]]
+* [[www.doremus.org]]
+- SPARQL endpoint
+* Questions
+- =marc2rdf= tool - can it be used for other types of marc records?
+  - It's specialized to the DOREMUS model
+  - The marc interpretation part can be easily reused for other marc
+    records
+- Have you considered a successor to MARC that's rdf-based?
+  - Not yet
+  - Worth considering in the future
+- Have you considered linking to literary works that are the basis for musical works?
+  - Yes, that's the reason they inherited from FRBRoo
+- Did you face challenges with the Free Text Intepreter?
+  - Yes each institution has its own convention
+  - And there were mistakes, e.g. in spelling of the words
+  - Had to add disambiguation part
+  - Used regex and then tried to confirm the results of the regex
