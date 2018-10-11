@@ -1,0 +1,43 @@
+* Δραμμαρ
+* Drama
+- Story conveyed through characters who perform live actions
+- Esslin, 1987
+* Difference between stories and drama
+- Addressed by narratology
+* DramaBank
+- Addresses the linguistic layer
+- Elson, 2012
+* OntoMedia
+- Rissen & Lawrence, 2010
+* Dramatic qualities
+- Actions
+- ... organized into Units
+- ... which stem from Characters' internal motivations (Intentions and Goals)
+  - Reminds me of Aaron Sorkin's Master Class
+- ... causing Conflicts
+* NeOn methodology
+* The wiki of drama
+- [[www.di.unito.it/wikidrammar][www.di.unito.it/wikidrammar]]
+* "perduant"
+- See [[http://www.mkbergman.com/1929/re-thinking-knowledge-representation/]]
+* Drammar at a glance
+- [[http://purl.org/drammar]]
+* The Nunnery scene from Hamlet
+- Example scene
+- Act 3 Scene 1
+- Climax
+- "Get thee to a nunnery"
+- Ophelia's goal is to make Hamlet talk
+- Hamlet wants to convince Ophelia to go to a nunnery
+- Hamlet grows to understand that Ophelia is working for someone else
+- Ophelia lies
+- Semantic Web Journal, 2015
+* Propose using the ontology for persisting intangible cultural artifacts
+* Questions
+- How about the 36 dramatic situations or Vladimir Popf(?)?
+  - Have shown that the 36 situations can be encoded in Drammar in a paper
+  - Cool!
+  - Claim is that the ontology is more basic than the 36 dramatic situations
+- Will the corpus be available?
+  - It will be available in a couple of weeks
+  - Also planning to release the tool for visualizing situations
