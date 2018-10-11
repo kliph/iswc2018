@@ -1,0 +1,17 @@
+* babylon health
+* Virtual doctor service and chatbot
+* Goals and challenges
+- Build a medical knowledgebase
+  - High coverage of primary care medicine
+- Easy to use by non experts
+  - Hide complexity of OWL and SPARQL
+- Keep it up to date
+- Make knowledgebase play a key role
+* ConceptBuilder
+- Takes unstructured text, extracts grammatical construction, detects named entities, then turns into a triple
+- standard DL reasoner
+* Questions
+- Why use OWL?
+  - Purely pragmatic to use OWL
+  - 4 or 5 people understand OWL
+  - Representative to have that many people
