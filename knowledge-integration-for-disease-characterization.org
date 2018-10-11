@@ -1,0 +1,25 @@
+* A breast cancer example
+* Goals
+- Help community medical oncologist use clinically relevant diagnosis
+  technology use new information from multiple sources that is easily
+  assessed.
+* Used multiple Cancer data resources
+* Extracted features from multiple guidelines for characterizing breast cancer stages
+* Semantic Data Dictionary approach to data annotation and integration Rashad et al, 2017
+* You won't find linked data in the wild
+- :(
+* Take tabular data
+* Construct semantic data from columnar names
+* Ontologies they're using
+- sio:
+- ncit:
+* Deductive Inference Agent
+- Built on Whyis knowledge graph framework
+- Mccusker et al, 2018
+- Is this an example of Reasoning?
+* Physicians ain't gonna use SPARQL
+- Visualization built on top of Whyis knowledge graph framework
+* Can infer what changed from previous to new editions of guidelines
+* Can quantify how guideline edition changes can affect individual patient staging diagnoses
+* Ontologies available on bioportal
+https://cancer-staging-ontology.github.io
