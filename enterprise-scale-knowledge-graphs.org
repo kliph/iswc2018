@@ -1,0 +1,156 @@
+* Enterprise Scale Knowledge Graphs Panel <2018-10-10 Wed>
+- Yuqing Gao, Microsoft
+- Anant Narayanan, Facebook
+- Alan Patterson, eBay
+- Jamie Taylor, Google
+- Anshu Jain, IBM
+* Yuqing Gao
+- Was with IBM Watson for 19 years!
+- Maintain multiple Knowledge graphs for
+  - Words :: mainly things and relationships... relates to words
+  - Work :: Coming from Microsoft Office
+  - Academic :: Researchers, publications, etc.
+- Future work is going to look at Conversation → bots
+  - Cortana?
+- Knowledge systems Pyramid
+  - Raw data → knowledge creation → high-quality semantically organized data
+- Difficult to view a knowledge graph at scale
+- Axes of challenges
+  - Coverage :: Have we got the information we need?
+  - Correctness :: Is our information accurate?
+  - Freshness :: Is the information up to date?
+- E.g. which "Will Smith", or "Patrick Smith" are you talking about?
+  - Wikipedia has 200 Will Smiths
+- Internal knowledge systems for enterprise represent another challenge
+
+* Anant Narayanan
+- Facebook is focused on *socially relevant* entities, concepts and words
+- Started out analyzing data about what people are talking about
+  - Started empircally, nice
+- Enhancements for users
+- Utility
+- For example
+  - Suggesting replies
+  - Entity detection for sending a link to a Drake song that you are talking about
+  - Stickers - Delight the user!
+
+* Alan Patterson
+- eBay has a Product Knowledge Graph
+- Taxonomies correspond to Categories Tree on the left side navigation
+- Problem
+  - duplicate products because they're slightly different, coming from
+    different sellers, etc.
+- Moving toward
+  - product pages showing a single product with different options for
+    condition, color, etc.
+- Connecting to external knowledge graphs for information about People (e.g. Michael Jordan) and Brands (e.g. Nike)
+- Validation
+  - Checking types with RDFS domain and range
+- The biggest problem: Identity
+  - Insight: Identity means different things for Producers (Sellers) and Consumers (Buyers)
+  - It may be necessary to support different views of identity
+
+* Jamie Taylor
+- Knowledge Graphs
+  - Moving from Strings → Things
+- E.g. Sunfish the fish and Sunfish the sailboat
+- Google has a knowledge graph panel that pops up for some searches
+- Scale is so large that no single person can wrap their head around it
+- Take a principled approach
+- Challenges
+  - Managing Identity
+    - e.g. the Chicago Bulls before Michael Jordan left vs after
+    - e.g. Sailing the sport vs the activity
+    - e.g. Cuba: the island, the government, the culture
+  - Managing Identity over time
+    - Are esports a Sport?  Wasn't around when they came up with ontology for "sport"
+    - Broadcast, podcast, streaming
+
+* Anshu Jain
+- Watson Discovery Advisor
+  - Provides among other things framework for building knowledge graphs
+- Watson Discovery Cloud Service
+- Discovery is about finding the non-obvious thing
+- Problems
+  - Finding a new link between entities
+  - Finding a new entity
+- Cascading effects
+  - Every piece of knowledge (fact) should know its cascading effects
+  - Insight: Is there a way to encode or abstract this in how we're handling updates to records in TRM/Circles?
+* Questions
+- What's the biggest challenge that you have?
+  - Facebook
+    - Conflict of interest
+      - Ramen restaurant owner decides ramen is fast food
+      - What's the best Star Wars movie?
+      - The answers to questions depend on who's asking
+      - Global company needs to understand local sensitivities
+  - Google
+    - Managing consistency
+  - IBM
+    - Federating across multiple systems and arriving at a "correct" answer
+  - Microsoft
+    - How fine grained or coarse grained do you want to go?
+    - Evolves
+- Who plans to share these big knowledge graphs?
+  - To researchers or others?
+  - Via what services?
+  - Facebook exposes a graph API for public data
+  - Google: Invest in wikidata
+    - But is Google going to give back to the community?
+    - Giving back the Freebase data into Wikidata was an effort.  It's
+      very hard.
+- Are you using RTF, SPARQL, RDFS, OWL?
+  - Partially
+- Re: autonomy for Cuba the island, the government how do you grapple with it?
+  - How intertwined language and colloquial thought about things are very challenging
+  - Entity resolution: let's push the entity resolution to the runtime
+    when someone is trying to use the entity.  The colloquialism may
+    help you resolve it.  Maintain the three separate entities but let
+    the users query decide.
+- What kind of technologies do you use?
+  - Multiple solutions
+  - IBM
+    - Text indexes
+    - Existing database
+    - In memory datastructures
+    - Not using graph data structures yet
+  - Ebay
+    - Front end replicated log
+    - Services can tail that log
+  - Want from the open source community
+    - Pluggable architecture for something like Kafka that can seemlessly update multiple stores
+  - Microsoft
+    - Can't use open source graph databases at their scale
+    - Mix of at least a half dozen systems
+- Reasoning?
+  - Type checking and validating data at eBay
+  - Facebook isn't using OWL
+    - Find from Yelp that a Starbucks has wifi
+    - Find from Foursquare that a Starbucks is quiet
+    - Reason that it's a good place to go to work
+    - Cool!
+- Apache Software Foundation builds on the open software ecosystem.
+  Business proposition is a service that you build on a common
+  software base? Are you going to make a Comanche Software Foundation
+  where we can share a common underlying system that is learning about
+  Michael Jordan.
+  - Applause break.  Good suggestion.
+  - Google
+    - Interesting way to lay the story out
+    - Spent many years trying to lay the story out from core to context
+    - This is where schema.org and wikidata have the opportunity to be
+      the core foundation
+  - Facebook
+    - Translating the scale from something that is usable by Facebook
+      and Google to something that's usable by researchers
+- What are the research challenges that we should thinking about?
+  - Privacy is an interesting challenge
+    - On device learning
+  - Federating across scales of graphs (large, more specific, and tiny)
+  - Can we scan the news every day and identify new facts
+  - Knowledge graphs can support deep learning, machine learning
+    - Embeddings are trained on frequency of occurence
+    - Frequency doesn't represent *meaning*
+    - Prime place for knowledge graphs to make a big difference
+  - Ensure that knowledge representation is a core part of the curriculum
