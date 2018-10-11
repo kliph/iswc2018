@@ -1,0 +1,18 @@
+* How much longer can we live by adopting healthy lifestyles?
+* Challenges
+- Model domain knowledge and represent the adherence to healthy lifestyles
+  - Need further high-quality semantic resources
+- Provide facilities supporting experts to specify and revise the
+  prescriptions for a healthy lifestyle
+  - Collaborative solutions are needed for managing experts' disagreements
+- Develop effective and efficient techniques allowing reasoning over
+  real-world data
+- Embed these techniques in the wider knowledge system ecosystem
+* HORUS.AI
+- A personal knowledge app
+- Dragoni et al., 2018
+* RDFPro
+- SPARQL-based reasoner
+* Questions
+- What persuades people?
+  - Changing visible behavior
