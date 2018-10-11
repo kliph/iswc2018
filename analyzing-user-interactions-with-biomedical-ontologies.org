@@ -1,0 +1,26 @@
+* 730 ontologies on BioPortal
+* Snomed CT has 300k ontologies
+* You can browse the ontologies
+* How do users use these resources?
+- Ontology engineers
+  - Identify which classes are most used or queried
+  - Prune unwante dclasses
+- Ontology repository maintainers
+  - Understand user behavior
+  - Suggest query terms
+- Biomedical Researcher
+  - Understand research trends
+* Questions
+- Do BioPortal WebUI exploration and APi querying strategies correlate with each other?
+* A catalog of user interactions with biomedical ontologies
+- BiOnIC
+* http://onto-apps.stanford.edu/vision
+- Insight: representing the overlapping shapes of data with superimposed polygons can be useful
+* Most users access ontologies via web ui
+* For some ontologies access is almost exclusively via API
+* Spearman correlation
+* Jaccard Similarity
+* Questions
+- Was subclassOf a suitable choice to determine the hierarchies of ontologies?
+  - There are a lot of ways to examine these hierarchies
+  - subclassOf was the most common property among the resources
