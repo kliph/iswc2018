@@ -1,0 +1,26 @@
+* An ontology for supporting healthy lifestyles
+- Covering development of the ontology
+- Includes food and physical activities domains
+- Includes concepts supporting monitoring of people's behaviors
+* Why?
+- Many available resources
+- However, need not just information but a way to exploit it in an intelligent way
+- Resources were not openly available
+* Food and Nutrients
+- 1000 "basic foods"
+  - From Italian Ministry of Agriculture and Italian Epedemiological Department data
+  - Simplistic representation of ingredients
+- Had to also create recipes
+  - Used Turconi atlas and private databases (e.g. CIRFOOD)
+* Activities
+- Used Compendium of Physical Activities
+- 20 main categories
+- Provides metabolic effort values for each activity over a specific amount of time
+* Linked to Linked Open Data cloud
+- Aligned with AGROVOC
+* Stats
+- 300 classes
+- [[http://w3id.org/helis]]
+* RabbitMQ server for remote reasoning activity
+* Interested in intergrating the Mindfulness domain
+- Supporting inference of potential dietary disorders
