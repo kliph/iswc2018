@@ -1,0 +1,105 @@
+* Social robotics
+* Human computer interactions and knowledge-based learning
+* Ontology Bingo
+- OWL
+- Hypertext
+- Ontology
+* Robots
+- Embodied in our world
+- Physicality separates it from abstract decision algorithms
+- Require integration of many systems
+  - Challenging
+* Robots require many teams
+- Difficult to share knowledge
+- Interactions are typical to software development
+  - git push
+  - git pull
+* Cultural norms
+- Growing up in Nigeria
+- Moving back to Netherelands
+- Social learning
+- Cultural learning
+* Human development
+- Early face to face communication
+- Social referencing
+- Taking cues in an environment to determine appropriate behaviors
+- Japanese Chimpanzee researcher thinks that active teaching, active learning, social referencing is critical for acculturation
+* Daniel Dennet
+- It's robots all the way down
+- Motor proteins are nano robots
+  - Don't know who you are or care
+- Culture defines the "apps" that get installed in our human brains
+  - Software derived from shared knowledge in the culture make consciousness
+* Enculturation
+- Being able to learn from others
+- Efficient way to transfer knowledge
+* Technology is clueless to our environment and social cues
+* Technology should be able to learn from our social cues
+* Artificial enculturation
+* Detecting facial features
+- Tracking
+  - Arousal
+  - Valence
+* Analyzed speed dating
+- Complex social behavior
+- Predict whether there will be a match
+- Twente University research group did this study
+- Predictors of a match?
+  - Body language
+    - No
+  - Distance
+    - Close ("I can see you're an experience dater")
+  - Orientation around a cocktail table
+    - So: Personal space
+    - "Use this knowledge wisely"
+* Zoo animals check out robot
+* Algorithm from goofy robot → pedestrian detection algorithm in mercedes benz cars
+* Don't name a robot after a family member
+- Spencer the robot, not the partner, thinks about peopel as a group
+- Took video data from Schiphol
+- Robot plans navigation through groups of people
+  - Takes into account how people relate to each other when navigating
+- Dynamic pattern between people's movement
+- Whether people's noses are pointing toward each other or in the same direction
+* EU PF7 SQUIRREL project
+- Robot that can clean up Lego
+- Unethical
+  - Children need to learn how to clean up
+- Robot creates a game that helps children clean up
+- Understand children's social dynamics
+- 4 year project
+* Facial expression robot
+- Helps train children with autism to communicate through facial expressions
+- http://de-enigma.eu
+- Reduce anxiety to encourage learning
+- Therapist using a robot as a mediator
+* Telepresence robotics
+- Can automatically position a telepresence platform based on the attention of the people in an environment
+* How can a driverless car communicate with a pedestrian
+- Regulations
+  - Can't put an autonomous car on the road with nonstandard behaviors
+  - Can't experiment easily
+- Hidden driver of a normal car
+- Fake autonomous car
+* Record human wearing a VR headset in a moving car
+- Gives a robot (ie. Machine Learning algorithm) good data on how a human would behave in a similar situation
+* Questions
+- For autistic children How different is a robot from an ipad?
+  - There is a study
+  - Children teach a robot / ipad
+  - When it was a robot, the children spoke more and spoke more accurately
+  - Maybe the physical presence encourages social behavior
+- What about humans adapting to robots?
+  - Hoping that robots will feel completely natural in a social situation
+  - Robots' behavior will make sense to us
+  - Novelty is a problem right now
+  - Novelty was a problem with mobile phones
+- How can AI/Robotics collaborate with Semantic Web community?  What are overlaps? How can data be exchanged? What types of data are you using?
+  - Short answer is not using any external general purpose knowledgebases
+  - What is the difference between Capoeira dancing and people fighting?
+  - Social feature detection can try to discriminate
+  - So you wouldn't have a database telling you that fighting involves more than one person, e.g.?
+  - Typically a project will train a dataset and derive general rules
+  - Maybe the dataset will be shared
+  - Doesn't happen very often
+  - Data protection laws have changed, so that makes things more difficult
