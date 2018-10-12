@@ -1,0 +1,21 @@
+* Books advertised at the conference that I'd like to read
+* Ada's Legacy: Cultures of Computing from the Victorian to the Digital Age
+- Hammerman & Russel
+* Semantics Empowered Web 3.0: Managing Enterprise, Social, Sensor, and Cloud-Based Data ...
+- Sheth & Thirunarayan
+* Aaron Swartz's A Programmable Web: An Unfinished Work
+- Swartz
+* Introduction to Semi-Supervised Learning
+- Zhu & Goldberg
+* Natural Language Understanding in a Semantic Web Context
+- Barriere
+* Materializing the Web of Linked Data
+- Konstantinou
+* Reasoning Web: Logical Foundation of KNowledge Graph Construction and Query Answering
+- Pan
+* Exploiting Linked Data and Knowledge Graphs in Large Organisations
+- Pan
+* Linked Data
+- Sakr
+* Mastering Structured Data on the Semantic Web
+- Sikos
