@@ -1,0 +1,63 @@
+* Choose representative ontology or ontologies
+- [[https://bioportal.bioontology.org/recommender][BioPortal Recommendation engine]]
+- Could use top 3
+- Don't spam the BioPortal recommendation engine :)
+- BioPortal reports quality measures that speak to the affinity and specificity (to borrow terms from pharmacology) of matches in the text you provide
+* Annotate the full EEG Report dataset
+- Don't spam the BioPortal API :)
+- Contact them to ask about rate limiting strategies or alternatives to hosting our own API on a virtual machine
+* TUH EEG Corpus README
+[[file+emacs:/Users/cliff/promptworks/tuh_eeg/www.isip.piconepress.com/projects/tuh_eeg/downloads/tuh_eeg/v1.1.0/_AAREADME.txt][_AAREADME]]
+* Retrieving all EEG Reports
+EEG Reports are what the [[https://www.isip.piconepress.com/projects/tuh_eeg/html/overview.shtml][Temple University Hospital EEG Resources]] call the text metadata associated with recordings.
+#+BEGIN_SRC sh :tangle ~/promptworks/tuh_eeg/scripts/find-all-eeg-reports :shebang "#!/bin/bash"
+  find . -type f -name '*.txt' ! -name '*README*'
+#+END_SRC
+** Usage
+#+BEGIN_SRC sh
+  ./scripts/find-all-eeg-reports > all-reports
+#+END_SRC
+
+Will produce a large text file =all-reports= containing the paths to each EEG Report.
+
+The number of lines in the =all-reports= file, that is to say the number of EEG Reports, should correspond to the statistics presented in the top-level [[file+emacs:/Users/cliff/promptworks/tuh_eeg/www.isip.piconepress.com/projects/tuh_eeg/downloads/tuh_eeg/v1.1.0/_AAREADME.txt][_AAREADME]].
+
+#+BEGIN_QUOTE
+---
+ Files and Sessions:
+
+               no. patients: 13,539
+               no. sessions: 23,002
+  avg. no. sessions/patient: 1.70
+              no. edf files: 53,506
+             total duration: 56,726,510 secs (15,757 hrs)
+
+#+END_QUOTE
+
+#+BEGIN_SRC sh
+  ~/promptworks/tuh_eeg
+  ➠ wc -l all-reports
+     23002 all-reports
+#+END_SRC
+* [[https://doi.org/10.1186/s13326-017-0128-y][NCBO Ontology Recommender 2.0: an enhanced approach for biomedical ontology recommendation]]
+** Criteria for evaluating relevance of ontology recommendation
+- Ontology Coverage
+- Ontology Acceptance
+- Ontology Detail
+- Ontology Specialization
+
+* Research
+- [ ] Run recommender on raw EEG Reports
+  - Don't spam the bioportal API
+- [ ] Collect summary statistics
+- [ ] Generate figures
+
+- [ ] Parse EEG reports into fields
+  - E.g. CLINICAL HISTORY, MEDICATIONS, INTRODUCTION, DESCRIPTION OF THE RECORD, HR, IMPRESSION, CLINICAL CORRELATION
+- [ ] Collect summary statistics
+  - Did Primary, Secondary, Tertiary recommended ontologies change?
+  - Did statistics for Primary recommended ontology get better?
+- [ ] Generate figures
+
+* Target Journals
+- [[https://jbiomedsem.biomedcentral.com/submission-guidelines/preparing-your-manuscript/short-report][Journal of Biomedical Semantics]]
