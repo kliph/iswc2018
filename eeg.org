@@ -23,6 +23,10 @@ Will produce a large text file =all-reports= containing the paths to each EEG Re
 The number of lines in the =all-reports= file, that is to say the number of EEG Reports, should correspond to the statistics presented in the top-level [[file+emacs:/Users/cliff/promptworks/tuh_eeg/www.isip.piconepress.com/projects/tuh_eeg/downloads/tuh_eeg/v1.1.0/_AAREADME.txt][_AAREADME]].
 
 #+BEGIN_EXPORT ascii
+File: _AAREADME.txt
+Database: TUH EEG Corpus
+Version: 1.1.0
+...
 ---
  Files and Sessions:
 
