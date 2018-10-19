@@ -22,20 +22,20 @@ Will produce a large text file =all-reports= containing the paths to each EEG Re
 
 The number of lines in the =all-reports= file, that is to say the number of EEG Reports, should correspond to the statistics presented in the top-level [[file+emacs:/Users/cliff/promptworks/tuh_eeg/www.isip.piconepress.com/projects/tuh_eeg/downloads/tuh_eeg/v1.1.0/_AAREADME.txt][_AAREADME]].
 
-#+BEGIN_EXPORT ascii
-File: _AAREADME.txt
-Database: TUH EEG Corpus
-Version: 1.1.0
-...
----
- Files and Sessions:
+#+BEGIN_SRC text
+  File: _AAREADME.txt
+  Database: TUH EEG Corpus
+  Version: 1.1.0
+  ...
+  ---
+   Files and Sessions:
 
-               no. patients: 13,539
-               no. sessions: 23,002
-  avg. no. sessions/patient: 1.70
-              no. edf files: 53,506
-             total duration: 56,726,510 secs (15,757 hrs)
-#+END_EXPORT
+                 no. patients: 13,539
+                 no. sessions: 23,002
+    avg. no. sessions/patient: 1.70
+                no. edf files: 53,506
+               total duration: 56,726,510 secs (15,757 hrs)
+#+END_SRC
 
 #+BEGIN_SRC sh
   ~/promptworks/tuh_eeg
